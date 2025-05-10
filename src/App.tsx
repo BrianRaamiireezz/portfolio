@@ -1,15 +1,25 @@
 import './App.css';
+import { Outlet, Route } from 'react-router';
 
 
-function App()
+function Component()
 {
-
     return (
         <>
-
+            <Outlet/>
         </>
     );
 }
 
 
-export default App;
+const Routes = [
+    <Route
+        index
+        element = { <></> }
+    />,
+];
+
+export default {
+    Component,
+    Routes,
+};
