@@ -1,10 +1,45 @@
 *,
-*:before,
-*:after
+*::before,
+*::after
 {
     padding    : 0;
     margin     : 0;
     box-sizing : border-box;
+}
+
+@media (prefers-color-scheme : light)
+{
+    :root
+    {
+        --color-background                  : #DEDEDE;
+        --color-text-primary                : #000000;
+        --color-text-secondary              : #363636;
+        --color-accent-saturation-lightness : 89% 89%;
+    }
+}
+
+@media (prefers-color-scheme : dark)
+{
+    :root
+    {
+        --color-background                  : #363636;
+        --color-text-primary                : #FFFFFF;
+        --color-text-secondary              : #C9C9C9;
+        --color-accent-saturation-lightness : 89% 13%;
+    }
+}
+
+:root
+{
+    --size-144 : 6.9rem;
+    --size-89  : 4.2rem;
+    --size-55  : 2.6rem;
+    --size-34  : 1.6rem;
+    --size-13  : 0.6rem;
+    --size-8   : 0.4rem;
+    --size-5   : 0.2rem;
+    --size-3   : 0.1rem;
+    --size-1   : 0.05rem;
 }
 
 html
@@ -13,18 +48,12 @@ html
     line-height : 1.5;
 }
 
-@media (prefers-color-scheme : light)
+body
 {
-    --color-background                  : #FFFFFF;
-    --color-text-primary                : #000000;
-    --color-text-secondary              : #363636;
-    --color-accent-saturation-lightness : 89% 89%;
+    background-color : var(--color-background);
 }
 
-@media (prefers-color-scheme : dark)
+#root
 {
-    --color-background                  : #363636;
-    --color-text-primary                : #FFFFFF;
-    --color-text-secondary              : #C9C9C9;
-    --color-accent-saturation-lightness : 89% 13%;
+    display : contents;
 }
