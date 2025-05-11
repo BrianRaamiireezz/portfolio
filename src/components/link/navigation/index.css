@@ -1,0 +1,13 @@
+.link--navigation--inactive
+{
+    --color    : var(--color-text-secondary);
+
+    box-shadow : var(--border);
+}
+
+.link--navigation--active
+{
+    --color    : var(--color-text-primary);
+
+    box-shadow : var(--border), var(--shadow);
+}
