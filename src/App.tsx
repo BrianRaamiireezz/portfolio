@@ -1,11 +1,15 @@
-import './App.css';
 import { Outlet, Route } from 'react-router';
+
+import Header from './components/header';
+
+import './App.css';
 
 
 function Component()
 {
     return (
         <>
+            <Header/>
             <Outlet/>
         </>
     );

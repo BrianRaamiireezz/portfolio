@@ -31,15 +31,18 @@
 
 :root
 {
-    --size-144 : 6.9rem;
-    --size-89  : 4.2rem;
-    --size-55  : 2.6rem;
-    --size-34  : 1.6rem;
-    --size-13  : 0.6rem;
-    --size-8   : 0.4rem;
-    --size-5   : 0.2rem;
-    --size-3   : 0.1rem;
-    --size-1   : 0.05rem;
+    --size-144             : 6.9rem;
+    --size-89              : 4.2rem;
+    --size-55              : 2.6rem;
+    --size-34              : 1.6rem;
+    --size-13              : 0.6rem;
+    --size-8               : 0.4rem;
+    --size-5               : 0.2rem;
+    --size-3               : 0.1rem;
+    --size-1               : 0.05rem;
+
+    --font-weight-light    : 300;
+    --font-character-width : 0.6;
 }
 
 html
@@ -56,4 +59,16 @@ body
 #root
 {
     display : contents;
+}
+
+@font-face
+{
+    font-family : 'Inter';
+    src         : url('./assets/fonts/inter.ttf');
+}
+
+@font-face
+{
+    font-family : 'Inter Italic';
+    src         : url('./assets/fonts/inter__italic.ttf');
 }
