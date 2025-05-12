@@ -3,7 +3,8 @@ import { ReactNode } from 'react';
 
 export enum E_Link_Type
 {
-    Navigation
+    Navigation,
+    External
 }
 
 export const Properties =

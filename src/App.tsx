@@ -3,6 +3,8 @@ import { Outlet, Route } from 'react-router';
 import Header from './components/header';
 import Navigation from './components/navigation';
 
+import About from './pages/about';
+
 import { Properties } from './components/navigation/types.ts';
 
 import './App.css';
@@ -34,7 +36,7 @@ function Component()
 const Routes = [
     <Route
         index
-        element = { <></> }
+        element = { <About/> }
     />,
 ];
 

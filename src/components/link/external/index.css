@@ -1,0 +1,6 @@
+.link--external
+{
+    --color    : var(--color-text-primary);
+
+    box-shadow : var(--border), var(--shadow);
+}

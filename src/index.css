@@ -74,3 +74,15 @@ body
     font-family : 'Inter Italic';
     src         : url('./assets/fonts/inter__italic.ttf');
 }
+
+@font-face
+{
+    font-family : 'Cascadia Mono';
+    src         : url('./assets/fonts/cascadia_mono.woff2');
+}
+
+@font-face
+{
+    font-family : 'Cascadia Mono Italic';
+    src         : url('./assets/fonts/cascadia_mono__italic.woff2');
+}

@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import { E_Link_Type, Properties } from './types.ts';
 
 import LinkNavigation from './navigation';
+import LinkExternal from './external';
 
 
 function Link(
@@ -23,6 +24,17 @@ function Link(
                 >
                     { properties.children }
                 </LinkNavigation>;
+
+            break;
+        }
+        case E_Link_Type.External:
+        {
+            component =
+                <LinkExternal
+                    to = { properties.to }
+                >
+                    { properties.children }
+                </LinkExternal>;
 
             break;
         }

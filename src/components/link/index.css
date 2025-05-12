@@ -4,7 +4,7 @@
     --border        : 0 0 0 var(--size-1) inset var(--color);
     --shadow        : 0 var(--size-5) var(--size-13) 0 rgb(from var(--color) R G B / 0.21);
 
-    padding         : var(--size-5) var(--size-13);
+    padding         : var(--size-8) var(--size-13);
 
     color           : var(--color);
 
