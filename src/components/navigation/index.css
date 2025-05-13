@@ -1,0 +1,11 @@
+.navigation
+{
+    display   : flex;
+    max-width : calc(var(--font-character-width) * 70em);
+}
+
+.navigation ul,
+.navigation ul li
+{
+    display : contents;
+}

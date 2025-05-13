@@ -1,0 +1,30 @@
+.header
+{
+    --font-size    : var(--size-55);
+    --color        : var(--color-text-primary);
+
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    gap            : 0 calc(
+            var(--font-size) * var(--font-character-width)
+    );
+
+    font-size      : var(--font-size);
+
+    color          : var(--color);
+
+    text-shadow    : calc(-1 * var(--size-3)) var(--size-3) var(--size-5) rgb(from var(--color) R G B / 0.13);
+}
+
+.header__title
+{
+    font-family : 'Inter Italic', sans-serif;
+    font-style  : italic;
+    font-weight : var(--font-weight-light);
+}
+
+.header__subtitle
+{
+    font-family : 'Inter', sans-serif;
+}

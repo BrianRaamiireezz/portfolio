@@ -1,0 +1,30 @@
+.about
+{
+    max-width      : calc(var(--font-character-width) * 70em);
+
+    display        : flex;
+    flex-direction : column;
+    gap            : 2rem;
+
+    color          : var(--color-text-primary);
+    font-family    : 'Cascadia Mono', monospace;
+}
+
+.about h1
+{
+    position : absolute;
+    top      : 0;
+    left     : -100vw;
+}
+
+.about__section
+{
+    display        : flex;
+    flex-direction : column;
+}
+
+.about__section__question
+{
+    font-family : 'Cascadia Mono Italic', monospace;
+    font-style  : italic;
+}

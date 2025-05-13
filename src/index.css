@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after
+{
+    padding    : 0;
+    margin     : 0;
+    box-sizing : border-box;
+}
+
+@media (prefers-color-scheme : light)
+{
+    :root
+    {
+        --color-background                  : #DEDEDE;
+        --color-text-primary                : #000000;
+        --color-text-secondary              : #363636;
+        --color-accent-saturation-lightness : 89% 89%;
+        --color-gradient-base               : #FFFFFF;
+    }
+}
+
+@media (prefers-color-scheme : dark)
+{
+    :root
+    {
+        --color-background                  : #363636;
+        --color-text-primary                : #FFFFFF;
+        --color-text-secondary              : #C9C9C9;
+        --color-accent-saturation-lightness : 89% 13%;
+        --color-gradient-base               : #000000;
+    }
+}
+
+:root
+{
+    --size-144             : 6.9rem;
+    --size-89              : 4.2rem;
+    --size-55              : 2.6rem;
+    --size-34              : 1.6rem;
+    --size-13              : 0.6rem;
+    --size-8               : 0.4rem;
+    --size-5               : 0.2rem;
+    --size-3               : 0.1rem;
+    --size-1               : 0.05rem;
+
+    --font-weight-light    : 300;
+    --font-character-width : 0.6;
+}
+
+html
+{
+    font-size   : 100%;
+    line-height : 1.5;
+}
+
+body
+{
+    background-color : var(--color-background);
+}
+
+#root
+{
+    display : contents;
+}
+
+@font-face
+{
+    font-family : 'Inter';
+    src         : url('./assets/fonts/inter.ttf');
+}
+
+@font-face
+{
+    font-family : 'Inter Italic';
+    src         : url('./assets/fonts/inter__italic.ttf');
+}
+
+@font-face
+{
+    font-family : 'Cascadia Mono';
+    src         : url('./assets/fonts/cascadia_mono.woff2');
+}
+
+@font-face
+{
+    font-family : 'Cascadia Mono Italic';
+    src         : url('./assets/fonts/cascadia_mono__italic.woff2');
+}
