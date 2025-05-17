@@ -82,3 +82,10 @@ body
     font-family : 'Cascadia Mono Italic';
     src         : url('./assets/fonts/cascadia_mono__italic.woff2');
 }
+
+.not-visible
+{
+    position : absolute;
+    top      : -100vh;
+    left     : -100vw;
+}
