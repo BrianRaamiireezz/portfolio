@@ -1,0 +1,91 @@
+.card:hover
+{
+    --color        : var(--color-text-primary);
+    --opacity-util : 0.21;
+}
+
+.card
+{
+    --color         : var(--color-text-secondary);
+    --opacity-util  : 0.13;
+
+    position        : relative;
+
+    width           : clamp(0rem, calc(0.6 * var(--size-34) * 15), 100%);
+
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : space-between;
+
+    color           : var(--color);
+    font-family     : 'Cascadia Mono', monospace;
+
+    text-decoration : none;
+    text-align      : center;
+
+    box-shadow      : calc(var(--size-13) * -1) var(--size-13) var(--size-34) 0 rgb(from var(--color) R G B / var(--opacity-util));
+    border-radius   : var(--size-5);
+}
+
+.card__title--accent
+{
+    --gradient-opacity : var(--opacity-util);
+
+    background         : linear-gradient(to bottom, var(--gradient-start), var(--gradient-end)), linear-gradient(to top right, var(--gradient-start), var(--gradient-end)), linear-gradient(to top left, var(--gradient-start), var(--gradient-end));
+}
+
+.card__title
+{
+    --max-lines   : 4;
+
+    width         : 100%;
+    height        : calc(1.5 * var(--max-lines) * var(--size-34) + var(--size-13) * 2);
+
+    padding       : var(--size-13);
+
+    font-size     : var(--size-34);
+    text-shadow   : calc(var(--size-3) * -1) var(--size-3) var(--size-3) rgb(from var(--color) R G B / 0.05);
+
+    overflow      : hidden;
+    overflow-wrap : break-word;
+}
+
+.card__tags
+{
+    width            : 100%;
+    height           : calc(1.5 + var(--size-13) * 2);
+
+    padding          : var(--size-13);
+
+    display          : flex;
+
+    border-radius    : 0 0 var(--size-5) var(--size-5);
+
+    background-color : var(--color-background);
+}
+
+@media (max-width : 320px)
+{
+    .card
+    {
+        width : 100%;
+    }
+}
+
+/* Border style */
+.card::after
+{
+    content          : '';
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+    right            : 0;
+    bottom           : 0;
+
+    background-color : transparent;
+    z-index          : 1;
+
+    box-shadow       : 0 0 0 var(--size-1) inset var(--color);
+    border-radius    : var(--size-5);
+}

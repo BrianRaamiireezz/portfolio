@@ -1,0 +1,29 @@
+@media (prefers-color-scheme : light)
+{
+    :root
+    {
+        --color-gradient-base             : #FFFFFF;
+        --color-gradient-accent-lightness : 89%;
+    }
+
+}
+
+@media (prefers-color-scheme : dark)
+{
+    :root
+    {
+        --color-gradient-base             : #000000;
+        --color-gradient-accent-lightness : 13%;
+    }
+}
+
+.base-gradient
+{
+    --color-gradient-accent-hue        : 0;
+    /* This is changed dinamically */
+    --color-gradient-accent-saturation : 0%;
+
+    --gradient-opacity                 : 0;
+    --gradient-start                   : rgb(from var(--color-gradient-base) R G B / var(--gradient-opacity)) 0% 0%;
+    --gradient-end                     : hsl(var(--color-gradient-accent-hue) var(--color-gradient-accent-saturation) var(--color-gradient-accent-lightness) / var(--gradient-opacity)) 100% 100%;
+}
