@@ -59,6 +59,9 @@
     padding          : var(--size-13);
 
     display          : flex;
+    flex-wrap        : wrap;
+
+    gap              : var(--size-13);
 
     border-radius    : 0 0 var(--size-5) var(--size-5);
 
