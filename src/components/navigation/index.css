@@ -1,6 +1,6 @@
 .navigation
 {
-    width           : clamp(0rem, calc(var(--font-character-width) * 70em), 100%);
+    width           : clamp(0rem, var(--max-width-paragraph), 100%);
 
     display         : flex;
     justify-content : space-between;

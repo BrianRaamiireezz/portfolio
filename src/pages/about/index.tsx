@@ -1,7 +1,8 @@
 import Link from '../../components/link';
 
-import { E_Link_Type } from '../../components/link/types.ts';
+import { E_Link_Type } from '@components/link/types.ts';
 
+import '@styles/paragraph/index.css';
 import './index.css';
 
 
@@ -10,7 +11,7 @@ function About()
     return (
         <>
             <main className = { 'about' }>
-                <h1>
+                <h1 className = { 'not-visible' }>
                     About me
                 </h1>
 

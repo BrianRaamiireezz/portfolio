@@ -1,6 +1,6 @@
 .about
 {
-    max-width      : calc(var(--font-character-width) * 70em);
+    max-width      : var(--max-width-paragraph);
 
     display        : flex;
     flex-direction : column;
@@ -8,13 +8,6 @@
 
     color          : var(--color-text-primary);
     font-family    : 'Cascadia Mono', monospace;
-}
-
-.about h1
-{
-    position : absolute;
-    top      : 0;
-    left     : -100vw;
 }
 
 .about__section
