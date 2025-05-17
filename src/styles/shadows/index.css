@@ -1,0 +1,4 @@
+.shadow_title
+{
+    text-shadow : calc(var(--size-3) * -1) var(--size-3) var(--size-3) rgb(from var(--color) R G B / 0.05);
+}

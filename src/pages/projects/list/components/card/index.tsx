@@ -7,6 +7,7 @@ import { get_gradient_hue } from '@utils/gradient';
 
 import { Properties } from './types.ts';
 
+import '@styles/shadows/index.css';
 import '@styles/gradient/index.css';
 import './index.css';
 
@@ -29,7 +30,7 @@ function ProjectCard(
                     style = { hue }
 
                     className = {
-                        `card__title base-gradient card__title--accent`
+                        `card__title base-gradient card__title--accent shadow_title`
                     }
                 >
                     { properties.name }

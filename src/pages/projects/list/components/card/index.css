@@ -45,7 +45,6 @@
     padding       : var(--size-13);
 
     font-size     : var(--size-34);
-    text-shadow   : calc(var(--size-3) * -1) var(--size-3) var(--size-3) rgb(from var(--color) R G B / 0.05);
 
     overflow      : hidden;
     overflow-wrap : break-word;
