@@ -6,6 +6,9 @@
       ],
       "@utils/*": [
         "src/utils/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
       ]
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
