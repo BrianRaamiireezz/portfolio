@@ -14,31 +14,9 @@
     text-decoration : none;
 }
 
-
-@media (prefers-color-scheme : dark )
-{
-    .link--accent
-    {
-        --color-gradient-accent-lightness : 13%;
-    }
-}
-
-@media (prefers-color-scheme : light )
-{
-    .link--accent
-    {
-        --color-gradient-accent-lightness : 89%;
-    }
-}
-
 .link--accent
 {
-    --color-gradient-accent-hue        : 0;
-    --color-gradient-accent-saturation : 0%;
+    --gradient-opacity : 0.21;
 
-    --gradient-opacity                 : 0.21;
-    --gradient-start                   : rgb(from var(--color-gradient-base) R G B / var(--gradient-opacity)) 0% 0%;
-    --gradient-end                     : hsl(var(--color-gradient-accent-hue) var(--color-gradient-accent-saturation) var(--color-gradient-accent-lightness) / var(--gradient-opacity)) 100% 100%;
-
-    background                         : linear-gradient(to top right, var(--gradient-start), var(--gradient-end)), linear-gradient(to top left, var(--gradient-start), var(--gradient-end));
+    background         : linear-gradient(to top right, var(--gradient-start), var(--gradient-end)), linear-gradient(to top left, var(--gradient-start), var(--gradient-end));
 }
