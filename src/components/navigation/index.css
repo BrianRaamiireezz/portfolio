@@ -1,7 +1,9 @@
 .navigation
 {
-    display   : flex;
-    max-width : calc(var(--font-character-width) * 70em);
+    width           : clamp(0rem, calc(var(--font-character-width) * 70em), 100%);
+
+    display         : flex;
+    justify-content : space-between;
 }
 
 .navigation ul,
