@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 import Tag from '@components/tag';
 
-import { get_gradient_hue } from '@utils/index.ts';
+import { get_gradient_hue } from '@utils/gradient';
 
 import { Properties } from './types.ts';
 
