@@ -26,6 +26,10 @@ function ProjectCard(
 
                 className = { 'card' }
             >
+                <span className = { 'not-visible' }>
+                    Project name,
+                </span>
+
                 <span
                     style = { hue }
 
@@ -34,6 +38,10 @@ function ProjectCard(
                     }
                 >
                     { properties.name }
+                </span>
+
+                <span className = { 'not-visible' }>
+                    . Project tags,
                 </span>
 
                 <span className = { 'card__tags' }>
