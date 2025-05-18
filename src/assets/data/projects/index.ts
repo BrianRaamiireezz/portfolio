@@ -9,7 +9,7 @@ export const Projects = [
             source: 'drtravel.png',
             alt: 'The website root page',
         },
-        description: `A fictional travel recommmendation site. The project foucuses on the use of javascript to generate HTML content dinamically based on the destinations the user searches for. The available places are beaches, countries, and temples.`,
+        description: `This project is about a fictional travel recommendation site. The project focuses on the use of JavaScript to generate HTML content dynamically based on the destinations the user searches for. The available places are beaches, countries, and temples.`,
         links: [
             {
                 name: 'visit',
