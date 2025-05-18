@@ -44,7 +44,10 @@
 
 .details__image
 {
-    box-shadow : 0 0 0 var(--size-1) inset var(--color);
+    width        : 100%;
+    aspect-ratio : 4320/2034;
+
+    box-shadow   : 0 0 0 var(--size-1) inset var(--color);
 }
 
 .details__links li
