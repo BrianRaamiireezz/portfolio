@@ -4,6 +4,7 @@ import Header from './components/header';
 import Navigation from './components/navigation';
 
 import About from './pages/about';
+import Projects from './pages/projects';
 
 import { Properties } from './components/navigation/types.ts';
 
@@ -18,6 +19,10 @@ function Component()
                 to: '/',
                 hue: '89',
                 children: 'About',
+            },
+            {
+                to: Projects.Segment,
+                children: 'Projects',
             },
         ];
 
@@ -38,6 +43,13 @@ const Routes = [
         index
         element = { <About/> }
     />,
+
+    <Route
+        path = { Projects.Segment }
+        element = { <Projects.Component/> }
+    >
+        { ...Projects.Routes }
+    </Route>,
 ];
 
 export default {

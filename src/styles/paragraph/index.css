@@ -1,0 +1,4 @@
+:root
+{
+    --max-width-paragraph : calc(var(--font-character-width) * 70rem);
+}

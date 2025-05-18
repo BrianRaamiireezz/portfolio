@@ -14,7 +14,7 @@ function LinkExternal(
                 href = { properties.to }
                 target = { '_blank' }
                 rel = { 'noopener noreferrer' }
-                className = { 'link link--external link--accent' }
+                className = { `link link--external base-gradient link--accent` }
             >
                 { properties.children }
                 <span aria-hidden = { true }> [↗]</span>

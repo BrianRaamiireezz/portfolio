@@ -3,6 +3,7 @@ import Link from '../link';
 import { E_Link_Type } from '../link/types.ts';
 import { Properties } from './types.ts';
 
+import '@styles/paragraph/index.css';
 import './index.css';
 
 
@@ -16,9 +17,12 @@ function Navigation(
                 <ul>
                     {
                         properties.items.map(
-                            item =>
+                            (
+                                item,
+                                index,
+                            ) =>
                                 (
-                                    <li>
+                                    <li key = { 'navigation-item-' + index }>
                                         <Link
                                             to = { item.to }
                                             type = { E_Link_Type.Navigation }

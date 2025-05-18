@@ -1,0 +1,9 @@
+.tag
+{
+    padding        : 0 var(--size-13);
+
+    box-shadow     : 0 0 0 var(--size-1) inset var(--color);
+    border-radius  : var(--size-3);
+
+    text-transform : capitalize;
+}

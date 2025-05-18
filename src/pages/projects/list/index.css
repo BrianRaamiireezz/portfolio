@@ -1,0 +1,17 @@
+.projects-list li
+{
+    display    : contents;
+
+    list-style : none;
+}
+
+.projects-list
+{
+    max-width       : var(--max-width-paragraph);
+
+    display         : flex;
+    justify-content : center;
+    flex-wrap       : wrap;
+
+    gap             : var(--size-34);
+}

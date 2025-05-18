@@ -1,6 +1,8 @@
 .link--external
 {
-    --color    : var(--color-text-primary);
+    --color        : var(--color-text-primary);
 
-    box-shadow : var(--border), var(--shadow);
+    box-shadow     : var(--border), var(--shadow);
+
+    text-transform : capitalize;
 }

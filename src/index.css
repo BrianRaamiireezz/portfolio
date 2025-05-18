@@ -11,11 +11,9 @@
 {
     :root
     {
-        --color-background                  : #DEDEDE;
-        --color-text-primary                : #000000;
-        --color-text-secondary              : #363636;
-        --color-accent-saturation-lightness : 89% 89%;
-        --color-gradient-base               : #FFFFFF;
+        --color-background     : #DEDEDE;
+        --color-text-primary   : #000000;
+        --color-text-secondary : #363636;
     }
 }
 
@@ -23,11 +21,9 @@
 {
     :root
     {
-        --color-background                  : #363636;
-        --color-text-primary                : #FFFFFF;
-        --color-text-secondary              : #C9C9C9;
-        --color-accent-saturation-lightness : 89% 13%;
-        --color-gradient-base               : #000000;
+        --color-background     : #363636;
+        --color-text-primary   : #FFFFFF;
+        --color-text-secondary : #C9C9C9;
     }
 }
 
@@ -85,4 +81,11 @@ body
 {
     font-family : 'Cascadia Mono Italic';
     src         : url('./assets/fonts/cascadia_mono__italic.woff2');
+}
+
+.not-visible
+{
+    position : absolute;
+    top      : -100vh;
+    left     : -100vw;
 }

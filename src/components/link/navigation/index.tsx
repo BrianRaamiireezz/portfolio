@@ -1,10 +1,13 @@
 import { CSSProperties } from 'react';
 import { NavLink } from 'react-router';
 
-import '../index.css';
-import './index.css';
+import { get_gradient_hue } from '@utils/gradient';
 
 import { Properties } from '../types.ts';
+
+import '@styles/gradient/index.css';
+import '../index.css';
+import './index.css';
 
 
 function LinkNavigation(
@@ -12,13 +15,7 @@ function LinkNavigation(
 )
 {
     const hue: CSSProperties =
-        properties.hue
-        ?
-        {
-            '--color-gradient-accent-hue': properties.hue ?? '0',
-            '--color-gradient-accent-saturation': '89%',
-        } as CSSProperties
-        : {};
+        get_gradient_hue( properties.hue );
 
     return (
         <>
@@ -30,7 +27,7 @@ function LinkNavigation(
                 className = {
                     ( { isActive } ) => (
                         isActive
-                        ? 'link link--navigation--active link--accent'
+                        ? `link link--navigation--active base-gradient link--accent`
                         : 'link link--navigation--inactive'
                     )
                 }
