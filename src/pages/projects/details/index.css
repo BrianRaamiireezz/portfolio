@@ -13,6 +13,14 @@
     font-family    : 'Cascadia Mono', monospace;
 }
 
+.details__header
+{
+    display        : flex;
+    flex-direction : column-reverse;
+
+    gap            : var(--size-55);
+}
+
 .details__tags li
 {
     display : contents;

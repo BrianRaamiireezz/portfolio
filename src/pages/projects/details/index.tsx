@@ -37,29 +37,33 @@ function ProjectDetails()
             <>
                 <main className = { 'details' }>
 
-                    <ul
-                        className = { 'details__tags' }
-                        aria-label = { 'Project tags' }
-                    >
+                    <div className = { 'details__header' }>
+                        <h1 className = { 'details__name shadow_title' }>
+                            { project.name }
+                        </h1>
 
-                        {
-                            project.tags.map(
-                                (
-                                    tag,
-                                    index,
-                                ) =>
-                                    <li key = { 'details-tag-' + index }>
-                                        <Tag
-                                            content = { tag }
-                                        />
-                                    </li>,
-                            )
-                        }
-                    </ul>
+                        <h2 className = { 'not-visible' }>
+                            Project tags
+                        </h2>
+                        <ul
+                            className = { 'details__tags' }
+                        >
 
-                    <h1 className = { 'details__name shadow_title' }>
-                        { project.name }
-                    </h1>
+                            {
+                                project.tags.map(
+                                    (
+                                        tag,
+                                        index,
+                                    ) =>
+                                        <li key = { 'details-tag-' + index }>
+                                            <Tag
+                                                content = { tag }
+                                            />
+                                        </li>,
+                                )
+                            }
+                        </ul>
+                    </div>
 
                     <img
                         className = { 'details__image' }
@@ -68,13 +72,18 @@ function ProjectDetails()
                         alt = { project.image.alt }
                     />
 
+                    <h2 className = { 'not-visible' }>
+                        Project description
+                    </h2>
                     <p>
                         { project.description }
                     </p>
 
+                    <h2 className = { 'not-visible' }>
+                        Project links
+                    </h2>
                     <ul
                         className = { 'details__links' }
-                        aria-label = { 'Project links' }
                     >
                         {
                             project.links.map(
@@ -93,7 +102,6 @@ function ProjectDetails()
                             )
                         }
                     </ul>
-
                 </main>
             </>
         );
